@@ -103,6 +103,10 @@ body{
     font-weight: 600;
 }
 
+.section-text p {
+    margin-bottom: 20px;
+}
+
 .section-text p{
     background-color: white;
     box-shadow: 0px 0px 4px 3px rgba(0,0,0,0.2);
@@ -346,9 +350,75 @@ mark{
 .reklama-img img{
     cursor: pointer;
     width: 50px;    
+    height: 50px;
     margin-left: 10px;
     object-fit:cover;
     transition: all .5s ease;
+}
+
+#valebol-narx{
+    margin-left: -40px;
+}
+
+#parker-narx{
+    margin-left: -60px;
+}
+
+#qalam-narx{
+    margin-left: -20px;
+}
+
+#piar-narx{
+    margin-left: -40px;
+}
+
+#ruchka{
+    margin-bottom: 20px;
+}
+
+#qalam{
+    margin-bottom: 45px;
+}
+
+#futbol-narx{
+    margin-left: -20px;
+}
+
+#shum-bola-kitob{
+    margin-bottom: 30px;
+}
+
+#football-ball{
+    max-height: 200px;
+    margin-bottom: 20px;
+}
+
+#silindri-narx{
+    margin-left: -40px;
+}
+
+#mator{
+    margin-bottom: 70px;
+}
+
+#shum-bola{
+    margin-left: 30px;
+}
+
+#honor-narx{
+    margin-left: -20px;
+}
+
+#otgan-kunlar{
+    margin-left: -60px;
+}
+
+#iphone-narx{
+    margin-left: -0px;
+}
+
+#iphone-img{
+    margin-bottom: 50px;
 }
 
 .reklama-img img:hover{
@@ -423,7 +493,15 @@ mark{
     color: transparent;
     margin-top: -50px;
     margin-bottom: 50px;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: all .5s ease;
     display: flex;
+}
+
+.card-exciting:hover{
+    border-bottom: 3px solid rgb(43, 174, 255);
+    transform: scale(1.03);
 }
 
 .card-date-input{

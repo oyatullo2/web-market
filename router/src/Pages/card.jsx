@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 export const Card = () => {
 
@@ -7,14 +7,13 @@ export const Card = () => {
     const [cardDate, setCardDate] = useState('')
     const [cvv, setCvv] = useState('')
     const [error, setError] = useState('')
-    const navigate = useNavigate()
+    const navigat = useNavigate()
 
     const emptyInputValue = () => {
         setCardNumber('')
         setCardDate('')
         setCvv('')
         setError('')
-        navigate('/home.jsx/kiyimlar.jsx')
     }
 
     const handReset = () => {
@@ -29,7 +28,13 @@ export const Card = () => {
 
     const enterKey = (event) => {
         if(event.key === "Enter"){
+            if(cardNumber.length === 16 && cardDate.length === 5 && cvv.length === 3){
             handReset();
+            navigat('/kiyimlar')
+            }
+            else{
+                setError("Bo'sh yoki qisqa maydon mavjud !")
+            }
         }
     }
 
@@ -52,7 +57,7 @@ export const Card = () => {
                 <input maxLength={3} onKeyDown={enterKey} onChange={(e)=> setCvv(e.target.value)} type="tel" value={cvv} placeholder="CVV" />
                 </div>
                 {cardNumber.length === 16 && cardDate.length === 5 && cvv.length === 3 ? 
-                <button className="card-add-button" onClick={emptyInputValue}>Qo'shish <i class="fa-brands fa-cc-visa"></i></button>
+                <Link to={'/kiyimlar'}><button className="card-add-button" onClick={emptyInputValue}>Qo'shish <i class="fa-brands fa-cc-visa"></i></button></Link>
                 :
                 <button className="card-add-button" onClick={handReset}>Qo'shish <i class="fa-brands fa-cc-visa"></i></button>
                 }

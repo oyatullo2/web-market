@@ -31,37 +31,39 @@ export function Home(){
         <div className="main">
             <div className="header">
                 <div className="header-logo">
-                    <Link className="header-logo" to={'/home.jsx'}>Web-Market</Link>
+                    <Link className="header-logo" to={'/home'}>Web-Market</Link>
                 </div>
                 <div className="header-menu">
-                    <Link className="header-href" to={'./kiyimlar.jsx'}>Kiyimlar</Link>
-                    <Link className="header-href" to={'./kitoblar.jsx'}>Kitoblar</Link>
-                    <Link className="header-href" to={'./elektronika.jsx'}>Elektronika</Link>
-                    <Link className="header-href" to={'./mexanika.jsx'}>Mexanika</Link>
-                    <Link className="header-href" to={'./sport.jsx'}>Sport</Link>
-                    <Link className="header-href" to={"./o'quv.jsx"}>O'quv-Qurollar</Link>
+                    <Link className="header-href" to={'/kiyimlar'}>Kiyimlar</Link>
+                    <Link className="header-href" to={'/kitoblar'}>Kitoblar</Link>
+                    <Link className="header-href" to={'/elektronika'}>Elektronika</Link>
+                    <Link className="header-href" to={'/mexanika'}>Mexanika</Link>
+                    <Link className="header-href" to={'/sport'}>Sport</Link>
+                    <Link className="header-href" to={"/o'quv"}>O'quv-Qurollar</Link>
                 </div>
             </div>
             <div className="section">
                 <div className="section-text">
-                    <Link to={'./kiyimlar.jsx'}><p><mark>Kiyimlar:</mark> <br />
+                    <marquee behavior="scroll" direction="up" className="section-text" scrollamount='5'>
+                    <Link to={'/kiyimlar'}><p><mark>Kiyimlar:</mark> <br />
                     Modaning har bir so‘zi va uslubi sizning shaxsiyatingizni aks ettiradi. Bizning kiyimlar kolleksiyamiz zamonaviy, qulay va turli xil ehtiyojlarga mos. Ishbilarmonlikdan tortib to dam olishgacha, har bir holat uchun mos kiyimlarni bizdan topishingiz mumkin. Har bir detal va tugma – bu uslub va sifatning timsoli. Yangi kiyimlar bilan o'z uslubingizni toping !</p>
                    </Link>
-                   <Link to={'./kitoblar.jsx'}><p><mark>Kitoblar:</mark> <br/>
+                   <Link to={'/kitoblar'}><p><mark>Kitoblar:</mark> <br/>
                     Bilim manbai sifatida kitoblar har doim dunyoni o'zgartirishga yordam beradi. Bizning kitoblar kolleksiyamiz orqali, siz o'zingizni yangi bilimlar bilan boyitishingiz mumkin. Adabiyot, ilmiy asarlar, o'quv qo‘llanmalar va motivatsion kitoblar – har bir kitob sizning fikrlash tarzini kengaytirishga yordam beradi. Kitoblar – bu yangi g‘oyalar, yangi dunyoqarashlar va yangi imkoniyatlar ochadi !</p>
                     </Link>
-                    <Link to={'./elektronika.jsx'}><p><mark>Elektronika:</mark> <br />
+                    <Link to={'/elektronika'}><p><mark>Elektronika:</mark> <br />
                     Texnologiya dunyosining eng yangi yangiliklarini kashf eting! Bizning elektronika bo‘limimizda sizni kompyuterlar, smartfonlar, televizorlar, o‘yin konsollaridan tortib to smart soatlar va boshqalar kutmoqda. Har bir mahsulot yuqori texnologiyalarga asoslangan bo'lib, kunlik ehtiyojlaringizni yanada qulay va samarali qilishga yordam beradi. Elektronika olami bilan hayotingizni yanada zamonaviylashtiring !</p>
                     </Link>
-                    <Link to={'./mexanika.jsx'}><p><mark>Mexanik Mahsulotlar:</mark> <br />
+                    <Link to={'/mexanika'}><p><mark>Mexanik Mahsulotlar:</mark> <br />
                     Mexanik asbob-uskunalar va texnika – bu ishni osonlashtiradigan va samarali qilishga yordam beradigan narsalardir. Bizning mexanik mahsulotlarimiz har qanday ishni bajarish uchun kerakli quvvat va aniqlikni ta'minlaydi. Avtomobillar uchun ehtiyot qismlar, qurilish asboblari, va boshqa texnik jihozlar sizning ish jarayoningizni eng yuqori darajada bajarishga yordam beradi. Kvalifikatsiyalangan texnikalar va ehtiyot qismlar bilan har bir loyiha muvaffaqiyatli bo'ladi !</p>
                     </Link>
-                    <Link to={'./sport.jsx'}><p><mark>Sport Mahsulotlari:</mark> <br/>
+                    <Link to={'/sport'}><p><mark>Sport Mahsulotlari:</mark> <br/>
                     Hayotning aktiv tarzini yoqtirganlar uchun, bizning sport narsalarimiz eng yaxshi hamrohingiz bo'ladi! Bu yerda siz turli sport turlari uchun zarur bo‘lgan barcha jihozlarni topasiz: yugurish poyabzallari, yoga matlari, velosipedlar, sport kiyimlari va boshqalar. Har bir mahsulotimiz yuqori sifat va qulaylikni ta'minlaydi, shuning uchun har bir mashg'ulotda eng yaxshi natijalarga erishishingiz mumkin. Endi o'zingizni eng yaxshi shaklda saqlash uchun eng yaxshi vositalarga ega bo'lishingiz mumkin !</p>
                     </Link>
-                    <Link to={"./o'quv.jsx"}><p><mark>O‘quv qurollari:</mark> <br />
+                    <Link to={"/o'quv"}><p><mark>O‘quv qurollari:</mark> <br />
                     O‘quv qurollari – bu ta’lim jarayonida o‘quvchilar va talabalar tomonidan darslarni o‘zlashtirish, mashg‘ulotlarni bajarish, bilimlarni mustahkamlash va rivojlantirish uchun ishlatiladigan vositalardir. Ushbu qurollar turli xil fanlar bo‘yicha bilim olishda yordam beruvchi eng muhim jihozlardan sanaladi. Quyida o‘quv qurollarining asosiy turlari va ularning qisqacha tavsifi keltirilgan !</p>
                     </Link>
+                    </marquee>
                     </div>
                 <div className="section-img">
                     <img className="section-img" src={imagesContent[image]} alt="" />

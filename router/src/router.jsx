@@ -13,14 +13,14 @@ export function Router() {
     return (
         <Routes>
             <Route path="/" element={<SignUp />} />
-            <Route path="/home.jsx" element={<Home />} />
-            <Route path="/home.jsx/kiyimlar.jsx" element={<Kiyimlar />} />
-            <Route path="/home.jsx/kitoblar.jsx" element={<Kitoblar />} />
-            <Route path="/home.jsx/elektronika.jsx" element={<Elektronika />} />
-            <Route path="/home.jsx/mexanika.jsx" element={<Mexanik />} />
-            <Route path="/home.jsx/sport.jsx" element={<Sport />} />
-            <Route path="/home.jsx/o'quv.jsx" element={<Oquv />} />
-            <Route path='/home.jsx/kiyimlar.jsx/card.jsx' element={<Card/>}/>
+            <Route path="/home" element={<Home />} />
+            <Route path="/kiyimlar" element={<Kiyimlar />} />
+            <Route path="/kitoblar" element={<Kitoblar />} />
+            <Route path="/elektronika" element={<Elektronika />} />
+            <Route path="/mexanika" element={<Mexanik />} />
+            <Route path="/sport" element={<Sport />} />
+            <Route path="/o'quv" element={<Oquv />} />
+            <Route path='/card' element={<Card/>}/>
         </Routes>
     );
 }
